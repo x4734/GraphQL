@@ -1,0 +1,34 @@
+------------- POST calls ------------
+----------------------------------
+http://localhost:8091/rest/books
+{
+	allBooks{
+		isn
+		title
+		publisher
+	}
+}
+----------------------------------
+http://localhost:8091/rest/books
+{
+	 book(id: "123") {
+		title
+		authors
+        publishedDate
+	 }
+}
+-------------------------------------
+http://localhost:8091/rest/books
+{
+	allBooks{
+		isn
+		title
+		publisher
+	}
+	 book(id: "123") {
+		title
+		authors
+        publishedDate
+	 }
+}
+----------------------------------------
